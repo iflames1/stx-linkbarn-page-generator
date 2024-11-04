@@ -1,0 +1,43 @@
+{
+  "tokenName": "Ming Mang",
+  "tokenTicker": "MINGMANG",
+  "tokenDescription": "The Next Generation of Meme Culture on the Blockchain",
+  "tokenCA": "0x0bcd4e7f827b01c2c3200dfbf446c5da358d43a623214613394131b2e10c6b9b::mingmang::MINGMANG",
+  "tokenImage": "/token.jpg",
+  "roadmap": [
+    {
+      "phase": "Phase 1: Launch",
+      "items": [
+        "Website Launch",
+        "Social Media Presence",
+        "Community Building",
+        "Initial Meme Collection Release"
+      ]
+    },
+    {
+      "phase": "Phase 2: Growth",
+      "items": [
+        "Token Launch",
+        "NFT Collection",
+        "Partnership Announcements",
+        "Community Events"
+      ]
+    },
+    {
+      "phase": "Phase 3: Expansion",
+      "items": [
+        "DAO Formation",
+        "Ming Mang Marketplace",
+        "Mobile App Development",
+        "International Marketing"
+      ]
+    }
+  ],
+  "roadmapProgress": 1,
+  "socials": {
+    "twitter": "https://twitter.com/mingmang",
+    "telegram": "https://t.me/mingmang",
+    "discord": "https://discord.gg/mingmang",
+    "website": "https://mingmang.com"
+  }
+}
