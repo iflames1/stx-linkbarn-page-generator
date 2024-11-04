@@ -1,37 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { ROADMAP } from "@/lib/types";
 
-export default function Roadmap() {
-  const roadmapData = [
-    {
-      phase: "Phase 1: Launch",
-      items: [
-        "Website Launch",
-        "Social Media Presence",
-        "Community Building",
-        "Initial Meme Collection Release",
-      ],
-    },
-    {
-      phase: "Phase 2: Growth",
-      items: [
-        "Token Launch",
-        "NFT Collection",
-        "Partnership Announcements",
-        "Community Events",
-      ],
-    },
-    {
-      phase: "Phase 3: Expansion",
-      items: [
-        "DAO Formation",
-        "Ming Mang Marketplace",
-        "Mobile App Development",
-        "International Marketing",
-      ],
-    },
-  ];
-
+export default function Roadmap({ roadmap }: { roadmap: ROADMAP[] }) {
   return (
     <section className="py-20 px-4 relative">
       <div className="absolute inset-0 bg-purple-900/10 backdrop-blur-sm"></div>
@@ -40,7 +11,7 @@ export default function Roadmap() {
           Roadmap
         </h2>
         <div className="container mx-auto max-w-4xl">
-          {roadmapData.map((phase, index) => (
+          {roadmap.map((phase, index) => (
             <div
               key={index}
               className="mb-12 transform hover:scale-102 transition-all"

@@ -5,10 +5,12 @@ export interface TOKEN {
   tokenDescription: tokenDescription;
   tokenCA?: string;
   dexLink?: string;
-  roadmap: ROADMAP[];
+  roadmap?: ROADMAP[];
   roadmapProgress: number;
-  socials: SOCIALS;
-  tokenomics: TOKENOMICS;
+  socials?: SOCIAL[];
+  tokenomics?: TOKENOMICS;
+  partners?: PARTNERS[];
+  faq?: FAQ[];
 }
 
 export interface ROADMAP {
@@ -35,4 +37,15 @@ export interface DISTRIBUTION {
 export interface TOKENOMICSFEATURES {
   title: string;
   content: string[];
+}
+
+export interface PARTNERS {
+  name: string;
+  logo: string;
+  link: string;
+}
+
+export interface FAQ {
+  question: string;
+  answer: string;
 }
