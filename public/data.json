@@ -39,5 +39,44 @@
     "telegram": "https://t.me/mingmang",
     "discord": "https://discord.gg/mingmang",
     "website": "https://mingmang.com"
+  },
+  "tokenomics": {
+    "totalSupply": "1,000,000,000",
+    "distribution": [
+      {
+        "title": "Liquidity Pool",
+        "percentage": 40,
+        "description": "Locked for 1 year to ensure trading stability"
+      },
+      {
+        "title": "Community Rewards",
+        "percentage": 30,
+        "description": "Distributed to active community members"
+      },
+      {
+        "title": "Development",
+        "percentage": 20,
+        "description": "Future development and marketing"
+      },
+      {
+        "title": "Team",
+        "percentage": 10,
+        "description": "Vested over 12 months"
+      }
+    ],
+    "features": [
+      {
+        "title": "Security Features",
+        "content": [
+          "Liquidity Locked for 12 Months",
+          "Ownership Renounced",
+          "Smart Contract Audited"
+        ]
+      },
+      {
+        "title": "Tax Structure",
+        "content": ["2% Marketing", "1% Development", "1% Liquidity Pool"]
+      }
+    ]
   }
 }

@@ -8,6 +8,7 @@ export interface TOKEN {
   roadmap: ROADMAP[];
   roadmapProgress: number;
   socials: SOCIALS;
+  tokenomics: TOKENOMICS;
 }
 
 export interface ROADMAP {
@@ -17,4 +18,21 @@ export interface ROADMAP {
 
 export interface SOCIAL {
   [key: string]: string;
+}
+
+export interface TOKENOMICS {
+  totalSupply: string;
+  distribution: DISTRIBUTION[];
+  features: TOKENOMICSFEATURES[];
+}
+
+export interface DISTRIBUTION {
+  title: string;
+  percentage: number;
+  description: string;
+}
+
+export interface TOKENOMICSFEATURES {
+  title: string;
+  content: string[];
 }
