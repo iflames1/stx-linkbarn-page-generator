@@ -3,7 +3,8 @@ export interface TOKEN {
   tokenTicker: string;
   tokenImage: string;
   tokenDescription: tokenDescription;
-  tokenCA: string;
+  tokenCA?: string;
+  dexLink?: string;
   roadmap: ROADMAP[];
   roadmapProgress: number;
   socials: SOCIALS;

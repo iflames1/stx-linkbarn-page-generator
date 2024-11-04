@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Socials() {
   return (
-    <section className="py-16 bg-black/50 backdrop-blur-sm">
+    <section id="socials" className="py-16 bg-black/50 backdrop-blur-sm">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
           Join Our Community
