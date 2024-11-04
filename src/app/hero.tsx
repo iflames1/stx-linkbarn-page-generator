@@ -3,8 +3,8 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import CopyButton from "./copy-button";
 import Link from "next/link";
+import CopyCA from "./copy-ca";
 
 interface HeroProps {
   tokenName: string;
@@ -60,23 +60,7 @@ export default function Hero({
 
           <Alert className="bg-purple-900/50 border-purple-500 max-w-2xl">
             <AlertDescription className="flex items-center justify-between">
-              <div className="flex-1 overflow-hidden">
-                <p className="text-sm text-purple-200 mb-1">
-                  Token Contract Address:
-                </p>
-                <p className="text-xs text-purple-300 truncate font-mono">
-                  {tokenCA ?? "coming soon..."}
-                </p>
-              </div>
-              <CopyButton />
-              {/*<Button
-                  variant="ghost"
-                  size="sm"
-                  className="ml-2 hover:bg-purple-800/50"
-                  onClick={copyToClipboard}
-                >
-                  <Copy className="h-4 w-4" />
-                </Button>*/}
+              <CopyCA tokenCA={tokenCA} />
             </AlertDescription>
           </Alert>
         </div>
