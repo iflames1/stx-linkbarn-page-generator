@@ -78,5 +78,49 @@
         "content": ["2% Marketing", "1% Development", "1% Liquidity Pool"]
       }
     ]
-  }
+  },
+  "partners": [
+    {
+      "name": "Uniswap",
+      "logo": "/token.jpg",
+      "link": "https://uniswap.org"
+    },
+    {
+      "name": "Chainlink",
+      "logo": "/token.jpg",
+      "link": "https://chain.link"
+    },
+    {
+      "name": "CoinGecko",
+      "logo": "/token.jpg",
+      "link": "https://coingecko.com"
+    },
+    {
+      "name": "CoinGecko",
+      "logo": "/token.jpg",
+      "link": "https://coingecko.com"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is Ming Mang?",
+      "answer": "Ming Mang is a revolutionary meme token built on cutting-edge blockchain technology, combining the fun of meme culture with real utility and community governance."
+    },
+    {
+      "question": "How can I buy MINGMANG tokens?",
+      "answer": "You can purchase MINGMANG tokens through our partner DEX platforms. Simply connect your wallet, swap your preferred cryptocurrency for MINGMANG, and join our community."
+    },
+    {
+      "question": "What makes Ming Mang unique?",
+      "answer": "Ming Mang stands out through its innovative tokenomics, strong community focus, and real utility features including staking, NFTs, and DAO governance."
+    },
+    {
+      "question": "Is the smart contract audited?",
+      "answer": "Yes, our smart contract has been thoroughly audited by leading blockchain security firms to ensure the safety of our holders' investments."
+    },
+    {
+      "question": "How can I participate in governance?",
+      "answer": "MINGMANG token holders can participate in governance by voting on proposals through our DAO platform, helping shape the future of the project."
+    }
+  ]
 }

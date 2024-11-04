@@ -4,36 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { FAQ } from "@/lib/types";
 
-export default function Faq() {
-  const faqItems = [
-    {
-      question: "What is Ming Mang?",
-      answer:
-        "Ming Mang is a revolutionary meme token built on cutting-edge blockchain technology, combining the fun of meme culture with real utility and community governance.",
-    },
-    {
-      question: "How can I buy MINGMANG tokens?",
-      answer:
-        "You can purchase MINGMANG tokens through our partner DEX platforms. Simply connect your wallet, swap your preferred cryptocurrency for MINGMANG, and join our community.",
-    },
-    {
-      question: "What makes Ming Mang unique?",
-      answer:
-        "Ming Mang stands out through its innovative tokenomics, strong community focus, and real utility features including staking, NFTs, and DAO governance.",
-    },
-    {
-      question: "Is the smart contract audited?",
-      answer:
-        "Yes, our smart contract has been thoroughly audited by leading blockchain security firms to ensure the safety of our holders' investments.",
-    },
-    {
-      question: "How can I participate in governance?",
-      answer:
-        "MINGMANG token holders can participate in governance by voting on proposals through our DAO platform, helping shape the future of the project.",
-    },
-  ];
-
+export default function Faq({ faqItems }: { faqItems: FAQ[] }) {
   return (
     <section className="py-24 relative">
       <div className="absolute inset-0 bg-purple-900/10 backdrop-blur-sm"></div>

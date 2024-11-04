@@ -20,28 +20,29 @@ const LandingPage = async () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-900 text-white">
-      <Hero
-        tokenName={data.tokenName}
-        tokenCA={data.tokenCA}
-        tokenDescription={data.tokenDescription}
-      />
+      <Hero tokenData={data} />
 
       {/*<Stats />*/}
 
-      <Tokenomics tokenomics={data.tokenomics} tokenTicker={data.tokenTicker} />
+      {data.tokenomics && (
+        <Tokenomics
+          tokenomics={data.tokenomics}
+          tokenTicker={data.tokenTicker}
+        />
+      )}
 
       <Features />
 
-      <Roadmap />
+      {data.roadmap && <Roadmap roadmap={data.roadmap} />}
 
-      <Partners />
+      {data.partners && <Partners partners={data.partners} />}
 
-      <Faq />
+      {data.faq && <Faq faqItems={data.faq} />}
 
-      <Socials />
+      {data.socials && <Socials socials={data.socials} />}
 
       <footer className="py-8 text-center text-sm text-purple-400 bg-black/30">
-        <p>© 2024 Ming Mang. All rights reserved.</p>
+        <p>© 2024 {data.tokenName}. All rights reserved.</p>
       </footer>
     </div>
   );
