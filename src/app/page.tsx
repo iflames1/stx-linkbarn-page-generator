@@ -28,7 +28,7 @@ const LandingPage = async () => {
 
       {/*<Stats />*/}
 
-      <Tokenomics />
+      <Tokenomics tokenomics={data.tokenomics} tokenTicker={data.tokenTicker} />
 
       <Features />
 
