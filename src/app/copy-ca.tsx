@@ -20,7 +20,7 @@ export default function CopyCA({ tokenCA }: { tokenCA?: string }) {
           className="text-xs text-purple-300 truncate font-mono cursor-pointer"
           onClick={copyToClipboard}
         >
-          {tokenCA ?? ""}
+          {tokenCA === "" ? "hang in there, coming soon..." : tokenCA}
         </p>
       </div>
       <Button
