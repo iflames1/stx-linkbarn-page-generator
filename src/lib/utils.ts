@@ -8,7 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 
 export const fetchData = async (): Promise<TOKEN | null> => {
   try {
-    const response = await fetch("http://localhost:3000//api/data");
+    //const response = await fetch("http://localhost:3000//api/data");
+    const response = await fetch("https://suirekt.vercel.app/api/data");
     return response.json();
   } catch (error) {
     console.error("Erron fetching =>", error);
