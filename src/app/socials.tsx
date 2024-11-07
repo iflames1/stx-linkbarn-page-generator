@@ -21,7 +21,7 @@ export default function Socials({ socials }: { socials: SOCIAL[] }) {
           Join Our Community
         </h2>
         {socials && (
-          <div className="flex justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {Object.entries(socials).map(([name, url], index) => {
               const IconComponent = icons[name as keyof typeof icons];
               return (
