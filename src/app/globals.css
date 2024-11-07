@@ -70,3 +70,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 10px 5px rgba(128, 0, 128, 0.5); /* Adjust the color and intensity as needed */
+}
