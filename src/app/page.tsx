@@ -1,18 +1,14 @@
 import React from "react";
-import Hero from "./hero";
-import Roadmap from "./roadmap";
-import Socials from "./socials";
-import Tokenomics from "./tokenomics";
-import Features from "./features";
-import Partners from "./partners";
-import Faq from "./faq";
+import Hero from "@/components/home/hero";
+import Roadmap from "@/components/home/roadmap";
+import Socials from "@/components/home/socials";
+import Tokenomics from "@/components/home/tokenomics";
+import Features from "@/components/home/features";
+import Partners from "@/components/home/partners";
+import Faq from "@/components/home/faq";
 import { fetchData } from "@/lib/utils";
 
-const LandingPage = async () => {
-  //const copyToClipboard = () => {
-  //  navigator.clipboard.writeText(tokenCA);
-  //};
-
+export default async function LandingPage() {
   const data = await fetchData();
   if (data === null) {
     return <div>Failed to fetch data, check console for more information.</div>;
@@ -46,6 +42,4 @@ const LandingPage = async () => {
       </footer>
     </div>
   );
-};
-
-export default LandingPage;
+}
