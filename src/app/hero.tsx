@@ -50,7 +50,7 @@ export default function Hero({ tokenData }: HeroProps) {
               width={192}
               height={192}
               src="/token.jpg"
-              alt="Ming Mang Logo"
+              alt="Sui Rekt Logo"
               className="w-full h-full rounded-full object-cover"
             />
           </motion.div>

@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Ming Mang SUI",
-  description: "Be Happy",
+  title: "Sui Rekt",
+  description: "Fuck Sui Rex",
 };
 
 export default function RootLayout({

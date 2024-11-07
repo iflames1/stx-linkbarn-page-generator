@@ -27,7 +27,7 @@
       "phase": "Phase 3: Expansion",
       "items": [
         "DAO Formation",
-        "Ming Mang Marketplace",
+        "Sui Rekt Marketplace",
         "Mobile App Development",
         "International Marketing"
       ]
@@ -35,10 +35,10 @@
   ],
   "roadmapProgress": 1,
   "socials": {
-    "twitter": "https://twitter.com/mingmang",
-    "telegram": "https://t.me/mingmang",
-    "discord": "https://discord.gg/mingmang",
-    "website": "https://mingmang.com"
+    "twitter": "https://twitter.com/suirekt",
+    "telegram": "https://t.me/suirekt",
+    "discord": "https://discord.gg/suirekt",
+    "website": "https://suirekt.com"
   },
   "tokenomics": {
     "totalSupply": "1,000,000,000",
@@ -103,16 +103,16 @@
   ],
   "faq": [
     {
-      "question": "What is Ming Mang?",
-      "answer": "Ming Mang is a revolutionary meme token built on cutting-edge blockchain technology, combining the fun of meme culture with real utility and community governance."
+      "question": "What is Sui Rekt?",
+      "answer": "Sui Rekt is a revolutionary meme token built on cutting-edge blockchain technology, combining the fun of meme culture with real utility and community governance."
     },
     {
-      "question": "How can I buy MINGMANG tokens?",
-      "answer": "You can purchase MINGMANG tokens through our partner DEX platforms. Simply connect your wallet, swap your preferred cryptocurrency for MINGMANG, and join our community."
+      "question": "How can I buy SUIREKT tokens?",
+      "answer": "You can purchase SUIREKT tokens through our partner DEX platforms. Simply connect your wallet, swap your preferred cryptocurrency for SUIREKT, and join our community."
     },
     {
-      "question": "What makes Ming Mang unique?",
-      "answer": "Ming Mang stands out through its innovative tokenomics, strong community focus, and real utility features including staking, NFTs, and DAO governance."
+      "question": "What makes Sui Rekt unique?",
+      "answer": "Sui Rekt stands out through its innovative tokenomics, strong community focus, and real utility features including staking, NFTs, and DAO governance."
     },
     {
       "question": "Is the smart contract audited?",
@@ -120,7 +120,7 @@
     },
     {
       "question": "How can I participate in governance?",
-      "answer": "MINGMANG token holders can participate in governance by voting on proposals through our DAO platform, helping shape the future of the project."
+      "answer": "SUIREKT token holders can participate in governance by voting on proposals through our DAO platform, helping shape the future of the project."
     }
   ]
 }

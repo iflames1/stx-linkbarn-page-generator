@@ -11,7 +11,7 @@ export default function Features() {
       icon: Coins,
       title: "Staking Rewards",
       description:
-        "Earn passive income by staking your MINGMANG tokens in our yield farming pools",
+        "Earn passive income by staking your SUIREKT tokens in our yield farming pools",
     },
     {
       icon: Gift,
