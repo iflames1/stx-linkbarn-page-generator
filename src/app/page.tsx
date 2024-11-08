@@ -7,6 +7,19 @@ import Features from "@/components/home/features";
 import Partners from "@/components/home/partners";
 import Faq from "@/components/home/faq";
 import { fetchData } from "@/lib/utils";
+import type { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const data = await fetchData();
+
+  return {
+    title: data?.tokenName,
+    description: data?.tokenDescription || "",
+    openGraph: {
+      images: "/token.jpg",
+    },
+  };
+}
 
 export default async function LandingPage() {
   const data = await fetchData();
@@ -27,7 +40,7 @@ export default async function LandingPage() {
         />
       )}
 
-      <Features />
+      {data.features && <Features features={data.features} />}
 
       {data.roadmap && <Roadmap roadmap={data.roadmap} />}
 

@@ -14,8 +14,14 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Ming Mang SUI",
-  description: "Be Happy",
+  title: {
+    default: "Token",
+    template: "%s",
+  },
+  description: "%s",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
