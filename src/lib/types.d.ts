@@ -6,6 +6,7 @@ export interface TOKEN {
   tokenCA?: string;
   dexLink?: string;
   roadmap?: ROADMAP[];
+  features?: FEATURES[];
   roadmapProgress: number;
   socials?: SOCIAL[];
   tokenomics?: TOKENOMICS;
@@ -26,6 +27,11 @@ export interface TOKENOMICS {
   totalSupply: string;
   distribution: DISTRIBUTION[];
   features: TOKENOMICSFEATURES[];
+}
+
+export interface FEATURES {
+  title: string;
+  description: string;
 }
 
 export interface DISTRIBUTION {

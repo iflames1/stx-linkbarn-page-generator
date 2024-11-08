@@ -4,6 +4,24 @@
   "tokenDescription": "The Next Generation of Meme Culture on the Blockchain",
   "tokenCA": "0x0bcd4e7f827b01c2c3200dfbf446c5da358d43a623214613394131b2e10c6b9b::mingmang::MINGMANG",
   "tokenImage": "/token.jpg",
+  "features": [
+    {
+      "title": "Staking Rewards",
+      "description": "Earn passive income by staking your MINGMANG tokens in our yield farming pools"
+    },
+    {
+      "title": "NFT Integration",
+      "description": "Exclusive NFT collections with unique utilities and benefits for holders"
+    },
+    {
+      "title": "DAO Governance",
+      "description": "Community-driven decision making through decentralized voting mechanisms"
+    },
+    {
+      "title": "Flash Minting",
+      "description": "Innovative minting mechanism for instant liquidity provision"
+    }
+  ],
   "roadmap": [
     {
       "phase": "Phase 1: Launch",
