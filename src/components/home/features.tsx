@@ -1,38 +1,12 @@
 "use client";
 import React from "react";
-import { Zap, Shield, Coins, Gift } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { FaStar } from "react-icons/fa6";
+import { FEATURES } from "@/lib/types";
 
-export default function Features() {
-  const features = [
-    {
-      icon: Coins,
-      title: "Staking Rewards",
-      description:
-        "Earn passive income by staking your MINGMANG tokens in our yield farming pools",
-    },
-    {
-      icon: Gift,
-      title: "NFT Integration",
-      description:
-        "Exclusive NFT collections with unique utilities and benefits for holders",
-    },
-    {
-      icon: Shield,
-      title: "DAO Governance",
-      description:
-        "Community-driven decision making through decentralized voting mechanisms",
-    },
-    {
-      icon: Zap,
-      title: "Flash Minting",
-      description:
-        "Innovative minting mechanism for instant liquidity provision",
-    },
-  ];
-
+export default function Features({ features }: { features: FEATURES[] }) {
   const { ref, inView } = useInView({
     threshold: 0.01,
   });
@@ -66,7 +40,7 @@ export default function Features() {
               >
                 <CardHeader>
                   <div className="h-12 w-12 rounded-lg bg-purple-500/20 flex items-center justify-center mb-4">
-                    <feature.icon className="h-6 w-6 text-purple-400" />
+                    <FaStar className="h-6 w-6 text-yellow-500" />
                   </div>
                   <CardTitle className="text-xl text-purple-200">
                     {feature.title}

@@ -4,6 +4,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
 import { SOCIAL } from "@/lib/types";
+
 import Link from "next/link";
 import React from "react";
 
@@ -22,8 +23,8 @@ export default function Socials({ socials }: { socials: SOCIAL[] }) {
         </h2>
         {socials && (
           <div className="flex flex-wrap justify-center gap-6">
-            {Object.entries(socials).map(([name, url], index) => {
-              const IconComponent = icons[name as keyof typeof icons];
+            {socials.map((social, index) => {
+              const IconComponent = icons[social.name as keyof typeof icons];
               return (
                 <Button
                   key={index}
@@ -31,11 +32,11 @@ export default function Socials({ socials }: { socials: SOCIAL[] }) {
                   className="hover:bg-purple-900 transform hover:scale-105 transition-all"
                   asChild
                 >
-                  <Link href={url}>
+                  <Link href={social.url}>
                     {React.createElement(IconComponent, {
                       className: "mr-2 h-5 w-5",
                     })}
-                    {name}
+                    {social.name}
                   </Link>
                 </Button>
               );
