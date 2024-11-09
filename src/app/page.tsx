@@ -19,7 +19,7 @@ const LandingPage = async () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-900 text-white">
+    <div className="min-h-screen w-screen overflow-x-hidden bg-gradient-to-b from-purple-900 via-black to-purple-900 text-white">
       <Hero tokenData={data} />
 
       {/*<Stats />*/}
