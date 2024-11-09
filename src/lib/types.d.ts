@@ -2,14 +2,14 @@ export interface TOKEN {
   tokenName: string;
   tokenTicker: string;
   tokenImage: string;
-  tokenDescription: tokenDescription;
+  tokenDescription: string;
   tokenCA?: string;
   dexLink?: string;
   roadmap?: ROADMAP[];
-  features?: FEATURES[];
   roadmapProgress: number;
+  features?: FEATURES[];
+  tokenomics: TOKENOMICS;
   socials?: SOCIAL[];
-  tokenomics?: TOKENOMICS;
   partners?: PARTNERS[];
   faq?: FAQ[];
 }
@@ -20,13 +20,14 @@ export interface ROADMAP {
 }
 
 export interface SOCIAL {
-  [key: string]: string;
+  name: "twitter" | "telegram" | "discord" | "website";
+  url: string;
 }
 
 export interface TOKENOMICS {
-  totalSupply: string;
-  distribution: DISTRIBUTION[];
-  features: TOKENOMICSFEATURES[];
+  totalSupply?: string;
+  distribution?: DISTRIBUTION[];
+  features?: TOKENOMICSFEATURES[];
 }
 
 export interface FEATURES {
