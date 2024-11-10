@@ -7,7 +7,7 @@ import { SOCIAL } from "@/lib/types";
 import Link from "next/link";
 import React from "react";
 
-export default function Socials({ socials }: { socials: SOCIAL[] }) {
+export default function Socials({ socials }: { socials: SOCIAL }) {
   const icons = {
     twitter: RiTwitterXLine,
     telegram: FaTelegramPlane,
