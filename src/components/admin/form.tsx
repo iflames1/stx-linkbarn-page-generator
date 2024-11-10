@@ -25,6 +25,7 @@ import RequiredField from "./required-field";
 import DexField from "./dex-field";
 import { Plus, Trash2, X } from "lucide-react";
 import SocialField from "./social-field";
+import PartnersField from "./partners-field";
 
 const TokenUpdateForm = () => {
   const [loading, setLoading] = useState(true);
@@ -650,6 +651,8 @@ const TokenUpdateForm = () => {
             </CardContent>
 
             <SocialField form={form} />
+
+            <PartnersField form={form} />
           </Card>
 
           {/* Optional Fields - commented out for now */}
