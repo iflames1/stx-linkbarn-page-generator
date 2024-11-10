@@ -9,9 +9,13 @@ export interface TOKEN {
   roadmapProgress: number;
   features?: FEATURES[];
   tokenomics: TOKENOMICS;
-  socials?: SOCIAL[];
+  socials?: SOCIAL;
   partners?: PARTNERS[];
   faq?: FAQ[];
+}
+
+interface FORMFIELD {
+  form: UseFormReturn<TOKEN>;
 }
 
 export interface ROADMAP {
@@ -20,9 +24,13 @@ export interface ROADMAP {
 }
 
 export interface SOCIAL {
-  name: "twitter" | "telegram" | "discord" | "website";
-  url: string;
+  twitter?: string;
+  telegram?: string;
+  discord?: string;
+  website?: string;
 }
+
+type SOCIALFIELDPATH = `socials.${keyof TOKEN["socials"]}`;
 
 export interface TOKENOMICS {
   totalSupply?: string;
