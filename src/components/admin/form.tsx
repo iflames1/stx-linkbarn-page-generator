@@ -14,6 +14,7 @@ import FaqField from "./faq-field";
 import RoadmapFeild from "./roadmap-feild";
 import FeaturesField from "./features-field";
 import TokenomicsField from "./tokenomics-field";
+import FormLayout from "./form-layout";
 
 const TokenUpdateForm = () => {
   const [loading, setLoading] = useState(true);
@@ -79,41 +80,58 @@ const TokenUpdateForm = () => {
   }
 
   return (
-    <div className="container mx-auto py-8 px-4 max-w-3xl">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold">
-                Token Information Form
-              </CardTitle>
-            </CardHeader>
+    <FormLayout>
+      <div className="container mx-auto py-8 px-4 max-w-3xl">
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl font-bold">
+                  Token Information Form
+                </CardTitle>
+              </CardHeader>
 
-            <RequiredField form={form} />
+              <div id="required-section">
+                <RequiredField form={form} />
+              </div>
 
-            <DexField form={form} />
+              <div id="dex-section">
+                <DexField form={form} />
+              </div>
 
-            <RoadmapFeild form={form} />
+              <div id="roadmap-section">
+                <RoadmapFeild form={form} />
+              </div>
 
-            <FeaturesField form={form} />
+              <div id="features-section">
+                <FeaturesField form={form} />
+              </div>
 
-            <TokenomicsField form={form} />
+              <div id="tokenomics-section">
+                <TokenomicsField form={form} />
+              </div>
 
-            <SocialField form={form} />
+              <div id="socials-section">
+                <SocialField form={form} />
+              </div>
 
-            <PartnersField form={form} />
+              <div id="partners-section">
+                <PartnersField form={form} />
+              </div>
 
-            <FaqField form={form} />
-          </Card>
-
-          <div className="flex justify-end">
-            <Button type="submit" size="lg" className="min-w-[150px]">
-              Save Changes
-            </Button>
-          </div>
-        </form>
-      </Form>
-    </div>
+              <div id="faq-section">
+                <FaqField form={form} />
+              </div>
+            </Card>
+            <div className="flex justify-end">
+              <Button type="submit" size="lg" className="min-w-[150px]">
+                Save Changes
+              </Button>
+            </div>
+          </form>
+        </Form>
+      </div>
+    </FormLayout>
   );
 };
 

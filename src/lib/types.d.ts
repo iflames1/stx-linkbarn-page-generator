@@ -64,3 +64,9 @@ export interface FAQ {
   question: string;
   answer: string;
 }
+
+export interface NAVITEM {
+  label: string;
+  sectionId: string;
+  icon?: React.ReactNode;
+}
