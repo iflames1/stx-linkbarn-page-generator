@@ -71,7 +71,7 @@ export default function PaymentAddress() {
         Pay me exactly <strong>100 SUI</strong> to the address below to get the
         site back up:
       </p>
-      <p style={styles.address}>
+      <p style={styles.address} onClick={copyToClipboard}>
         0x2d91e68b066776cb9aca3a1c1658915675bb76d0cf7faa7aa6161aa6ff62a028
       </p>
       <button onClick={copyToClipboard} style={styles.button}>
@@ -100,6 +100,7 @@ const styles: { [key: string]: CSSProperties } = {
     fontSize: "16px",
     fontFamily: "monospace",
     margin: "10px 0",
+    cursor: "pointer",
   },
   button: {
     padding: "8px 16px",
