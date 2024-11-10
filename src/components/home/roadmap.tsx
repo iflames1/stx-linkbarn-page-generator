@@ -24,7 +24,7 @@ export default function Roadmap({ roadmap }: { roadmap: ROADMAP[] }) {
               className="mb-12 transform hover:scale-102 transition-all"
             >
               <h3 className="text-2xl font-bold mb-4 text-purple-400">
-                {phase.phase}
+                Phase {index + 1}: {phase.phase}
               </h3>
               <motion.div
                 ref={ref}
