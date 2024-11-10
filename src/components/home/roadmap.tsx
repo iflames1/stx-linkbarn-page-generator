@@ -17,7 +17,7 @@ export default function Roadmap({ roadmap }: { roadmap: ROADMAP[] }) {
         <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
           Roadmap
         </h2>
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-4xl overflow-hidden">
           {roadmap.map((phase, index) => (
             <div
               key={index}
