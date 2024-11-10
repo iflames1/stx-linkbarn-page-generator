@@ -43,7 +43,7 @@ export default function Tokenomics({
 
         {/* Supply Distribution Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {tokenomics.distribution.map((item, index) => {
+          {tokenomics.distribution?.map((item, index) => {
             const IconComponent = icons[item.title as keyof typeof icons];
 
             return (
@@ -84,7 +84,7 @@ export default function Tokenomics({
 
         {/* Tokenomics Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {tokenomics.features.map((feature, index) => {
+          {tokenomics.features?.map((feature, index) => {
             const IconComponent = icons[feature.title as keyof typeof icons];
 
             return (
