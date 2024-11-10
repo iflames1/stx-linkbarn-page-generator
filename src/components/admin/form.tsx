@@ -22,6 +22,7 @@ import SocialField from "./social-field";
 import PartnersField from "./partners-field";
 import FaqField from "./faq-field";
 import RoadmapFeild from "./roadmap-feild";
+import FeaturesField from "./features-field";
 
 const TokenUpdateForm = () => {
   const [loading, setLoading] = useState(true);
@@ -51,15 +52,6 @@ const TokenUpdateForm = () => {
       partners: [],
       faq: [],
     },
-  });
-
-  const {
-    fields: featureFields,
-    append: appendFeature,
-    remove: removeFeature,
-  } = useFieldArray({
-    control: form.control,
-    name: "features",
   });
 
   // Setup field arrays for tokenomics sections
@@ -151,89 +143,7 @@ const TokenUpdateForm = () => {
 
             <RoadmapFeild form={form} />
 
-            <CardContent>
-              <div className="space-y-6 rounded-lg border border-border p-4 bg-muted/50">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-semibold">Features</h3>
-                  <Button
-                    type="button"
-                    variant="outline"
-                    size="sm"
-                    onClick={() =>
-                      appendFeature({ title: "", description: "" })
-                    }
-                    className="flex items-center gap-2"
-                  >
-                    <Plus className="h-4 w-4" />
-                    Add Feature
-                  </Button>
-                </div>
-
-                <div className="space-y-4">
-                  {featureFields.map((field, index) => (
-                    <div
-                      key={field.id}
-                      className="p-4 border rounded-md bg-background space-y-4"
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <h4 className="font-medium">Feature {index + 1}</h4>
-                        <Button
-                          type="button"
-                          variant="ghost"
-                          size="icon"
-                          onClick={() => removeFeature(index)}
-                          className="text-destructive"
-                        >
-                          <Trash2 className="h-4 w-4" />
-                        </Button>
-                      </div>
-
-                      <FormField
-                        control={form.control}
-                        name={`features.${index}.title`}
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Title</FormLabel>
-                            <FormControl>
-                              <Input
-                                {...field}
-                                placeholder="Enter feature title"
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-
-                      <FormField
-                        control={form.control}
-                        name={`features.${index}.description`}
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Description</FormLabel>
-                            <FormControl>
-                              <Textarea
-                                {...field}
-                                placeholder="Enter feature description"
-                                className="min-h-[100px]"
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
-                  ))}
-
-                  {featureFields.length === 0 && (
-                    <div className="text-center py-8 text-muted-foreground border-2 border-dashed rounded-lg">
-                      No features added. Click the &quot;Add Feature&quot;
-                      button to add your first feature.
-                    </div>
-                  )}
-                </div>
-              </div>
-            </CardContent>
+            <FeaturesField form={form} />
 
             <CardContent>
               <div className="space-y-6 rounded-lg border border-border p-4 bg-muted/50">
