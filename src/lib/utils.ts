@@ -7,9 +7,12 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const fetchData = async (): Promise<TOKEN | null> => {
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
   try {
-    //const response = await fetch("http://localhost:3000//api/data");
-    const response = await fetch("https://suirekt.vercel.app/api/data");
+    if (!apiUrl) {
+      throw new Error("API URL is not defined");
+    }
+    const response = await fetch(apiUrl);
     return response.json();
   } catch (error) {
     console.error("Erron fetching =>", error);

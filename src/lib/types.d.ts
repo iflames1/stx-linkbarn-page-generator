@@ -2,15 +2,20 @@ export interface TOKEN {
   tokenName: string;
   tokenTicker: string;
   tokenImage: string;
-  tokenDescription: tokenDescription;
+  tokenDescription: string;
   tokenCA?: string;
   dexLink?: string;
   roadmap?: ROADMAP[];
   roadmapProgress: number;
-  socials?: SOCIAL[];
-  tokenomics?: TOKENOMICS;
+  features?: FEATURES[];
+  tokenomics: TOKENOMICS;
+  socials?: SOCIAL;
   partners?: PARTNERS[];
   faq?: FAQ[];
+}
+
+interface FORMFIELD {
+  form: UseFormReturn<TOKEN>;
 }
 
 export interface ROADMAP {
@@ -19,13 +24,23 @@ export interface ROADMAP {
 }
 
 export interface SOCIAL {
-  [key: string]: string;
+  twitter?: string;
+  telegram?: string;
+  discord?: string;
+  website?: string;
 }
 
+type SOCIALFIELDPATH = `socials.${keyof TOKEN["socials"]}`;
+
 export interface TOKENOMICS {
-  totalSupply: string;
-  distribution: DISTRIBUTION[];
-  features: TOKENOMICSFEATURES[];
+  totalSupply?: string;
+  distribution?: DISTRIBUTION[];
+  features?: TOKENOMICSFEATURES[];
+}
+
+export interface FEATURES {
+  title: string;
+  description: string;
 }
 
 export interface DISTRIBUTION {
@@ -48,4 +63,10 @@ export interface PARTNERS {
 export interface FAQ {
   question: string;
   answer: string;
+}
+
+export interface NAVITEM {
+  label: string;
+  sectionId: string;
+  icon?: React.ReactNode;
 }

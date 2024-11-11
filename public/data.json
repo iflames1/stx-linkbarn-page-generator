@@ -4,9 +4,27 @@
   "tokenDescription": "FUCK SUIREX",
   "tokenCA": "",
   "tokenImage": "/token.jpg",
+  "features": [
+    {
+      "title": "Staking Rewards",
+      "description": "Earn passive income by staking your MINGMANG tokens in our yield farming pools"
+    },
+    {
+      "title": "NFT Integration",
+      "description": "Exclusive NFT collections with unique utilities and benefits for holders"
+    },
+    {
+      "title": "DAO Governance",
+      "description": "Community-driven decision making through decentralized voting mechanisms"
+    },
+    {
+      "title": "Flash Minting",
+      "description": "Innovative minting mechanism for instant liquidity provision"
+    }
+  ],
   "roadmap": [
     {
-      "phase": "Phase 1: Launch",
+      "phase": "Launch",
       "items": [
         "Website Launch",
         "Social Media Presence",
@@ -15,7 +33,7 @@
       ]
     },
     {
-      "phase": "Phase 2: Growth",
+      "phase": "Growth",
       "items": [
         "Token Launch",
         "NFT Collection",
@@ -24,7 +42,7 @@
       ]
     },
     {
-      "phase": "Phase 3: Expansion",
+      "phase": "Expansion",
       "items": [
         "DAO Formation",
         "Sui Rekt Marketplace",

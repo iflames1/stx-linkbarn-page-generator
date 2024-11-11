@@ -7,7 +7,7 @@ import { SOCIAL } from "@/lib/types";
 import Link from "next/link";
 import React from "react";
 
-export default function Socials({ socials }: { socials: SOCIAL[] }) {
+export default function Socials({ socials }: { socials: SOCIAL }) {
   const icons = {
     twitter: RiTwitterXLine,
     telegram: FaTelegramPlane,
@@ -31,7 +31,7 @@ export default function Socials({ socials }: { socials: SOCIAL[] }) {
                   className="hover:bg-purple-900 transform hover:scale-105 transition-all"
                   asChild
                 >
-                  <Link href={url}>
+                  <Link href={url as unknown as string}>
                     {React.createElement(IconComponent, {
                       className: "mr-2 h-5 w-5",
                     })}

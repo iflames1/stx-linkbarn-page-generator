@@ -14,8 +14,14 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sui Rekt",
-  description: "Fuck Sui Rex",
+  title: {
+    default: "Token",
+    template: "%s",
+  },
+  description: "%s",
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
