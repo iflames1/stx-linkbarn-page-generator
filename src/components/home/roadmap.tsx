@@ -11,13 +11,13 @@ export default function Roadmap({ roadmap }: { roadmap: ROADMAP[] }) {
   });
 
   return (
-    <section className="py-20 px-4 relative">
+    <section className="py-20 px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-purple-900/10 backdrop-blur-sm"></div>
       <div className="relative">
         <h2 className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
           Roadmap
         </h2>
-        <div className="container mx-auto max-w-4xl overflow-hidden">
+        <div className="container mx-auto max-w-4xl">
           {roadmap.map((phase, index) => (
             <div
               key={index}
