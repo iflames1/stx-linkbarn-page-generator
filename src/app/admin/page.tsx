@@ -18,7 +18,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function page() {
   return (
     <div>
-      {/*<TokenManagementForm />*/}
       <TokenUpdateForm />
     </div>
   );

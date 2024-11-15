@@ -49,7 +49,7 @@ export default function Hero({ tokenData }: HeroProps) {
             <Image
               width={192}
               height={192}
-              src="/token.jpg"
+              src={tokenData.tokenImage}
               alt="Sui Rekt Logo"
               className="w-full h-full rounded-full object-cover"
             />
@@ -81,7 +81,7 @@ export default function Hero({ tokenData }: HeroProps) {
               className="bg-purple-500 hover:bg-purple-600 transform hover:scale-105 transition-all"
               asChild
             >
-              <Link href={tokenData.dexLink ?? "#"}>
+              <Link href={tokenData.dexLink ?? "#"} target="_blank">
                 Buy Now <ExternalLink className="ml-2 h-4 w-4" />
               </Link>
             </Button>

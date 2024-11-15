@@ -1,0 +1,144 @@
+{
+  "tokenName": "SUI REKT",
+  "tokenTicker": "SUIREKT",
+  "tokenDescription": "FUCK SUIREX",
+  "tokenCA": "",
+  "tokenImage": "/token.jpg",
+  "features": [
+    {
+      "title": "Staking Rewards",
+      "description": "Earn passive income by staking your MINGMANG tokens in our yield farming pools"
+    },
+    {
+      "title": "NFT Integration",
+      "description": "Exclusive NFT collections with unique utilities and benefits for holders"
+    },
+    {
+      "title": "DAO Governance",
+      "description": "Community-driven decision making through decentralized voting mechanisms"
+    },
+    {
+      "title": "Flash Minting",
+      "description": "Innovative minting mechanism for instant liquidity provision"
+    }
+  ],
+  "roadmap": [
+    {
+      "phase": "Launch",
+      "items": [
+        "Website Launch",
+        "Social Media Presence",
+        "Community Building",
+        "Initial Meme Collection Release"
+      ]
+    },
+    {
+      "phase": "Growth",
+      "items": [
+        "Token Launch",
+        "NFT Collection",
+        "Partnership Announcements",
+        "Community Events"
+      ]
+    },
+    {
+      "phase": "Expansion",
+      "items": [
+        "DAO Formation",
+        "Sui Rekt Marketplace",
+        "Mobile App Development",
+        "International Marketing"
+      ]
+    }
+  ],
+  "roadmapProgress": 1,
+  "socials": {
+    "twitter": "https://twitter.com/suirekt",
+    "telegram": "https://t.me/suirekt",
+    "discord": "https://discord.gg/suirekt",
+    "website": "https://suirekt.com"
+  },
+  "tokenomics": {
+    "totalSupply": "1,000,000,000",
+    "distribution": [
+      {
+        "title": "Liquidity Pool",
+        "percentage": 40,
+        "description": "Locked for 1 year to ensure trading stability"
+      },
+      {
+        "title": "Community Rewards",
+        "percentage": 30,
+        "description": "Distributed to active community members"
+      },
+      {
+        "title": "Development",
+        "percentage": 20,
+        "description": "Future development and marketing"
+      },
+      {
+        "title": "Team",
+        "percentage": 10,
+        "description": "Vested over 12 months"
+      }
+    ],
+    "features": [
+      {
+        "title": "Security Features",
+        "content": [
+          "Liquidity Locked for 12 Months",
+          "Ownership Renounced",
+          "Smart Contract Audited"
+        ]
+      },
+      {
+        "title": "Tax Structure",
+        "content": ["2% Marketing", "1% Development", "1% Liquidity Pool"]
+      }
+    ]
+  },
+  "partners": [
+    {
+      "name": "Uniswap",
+      "logo": "/token.jpg",
+      "link": "https://uniswap.org"
+    },
+    {
+      "name": "Chainlink",
+      "logo": "/token.jpg",
+      "link": "https://chain.link"
+    },
+    {
+      "name": "CoinGecko",
+      "logo": "/token.jpg",
+      "link": "https://coingecko.com"
+    },
+    {
+      "name": "CoinGecko",
+      "logo": "/token.jpg",
+      "link": "https://coingecko.com"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is Sui Rekt?",
+      "answer": "Sui Rekt is a revolutionary meme token built on cutting-edge blockchain technology, combining the fun of meme culture with real utility and community governance."
+    },
+    {
+      "question": "How can I buy SUIREKT tokens?",
+      "answer": "You can purchase SUIREKT tokens through our partner DEX platforms. Simply connect your wallet, swap your preferred cryptocurrency for SUIREKT, and join our community."
+    },
+    {
+      "question": "What makes Sui Rekt unique?",
+      "answer": "Sui Rekt stands out through its innovative tokenomics, strong community focus, and real utility features including staking, NFTs, and DAO governance."
+    },
+    {
+      "question": "Is the smart contract audited?",
+      "answer": "Yes, our smart contract has been thoroughly audited by leading blockchain security firms to ensure the safety of our holders' investments."
+    },
+    {
+      "question": "How can I participate in governance?",
+      "answer": "SUIREKT token holders can participate in governance by voting on proposals through our DAO platform, helping shape the future of the project."
+    }
+  ]
+}
