@@ -14,7 +14,7 @@ body {
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
+    --primary: #f2a90a;
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -41,7 +41,7 @@ body {
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
+    --primary: #f2a90a;
     --primary-foreground: 240 5.9% 10%;
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -72,5 +72,5 @@ body {
 }
 
 .glow-on-hover:hover {
-  box-shadow: 0 0 10px 5px rgba(128, 0, 128, 0.5); /* Adjust the color and intensity as needed */
+  box-shadow: 0 0 10px 5px rgba(242, 169, 10, 0.5); /* Adjust the color and intensity as needed */
 }

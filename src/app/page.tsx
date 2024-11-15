@@ -28,7 +28,7 @@ export default async function LandingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-900 via-black to-purple-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-orange-900 via-yellow-500 to-orange-900 text-white">
       <Hero tokenData={data} />
 
       {/*<Stats />*/}
@@ -50,7 +50,7 @@ export default async function LandingPage() {
 
       {data.socials && <Socials socials={data.socials} />}
 
-      <footer className="py-8 text-center text-sm text-purple-400 bg-black/30">
+      <footer className="py-8 text-center text-sm text-orange-400 bg-black/30">
         <p>© 2024 {data.tokenName}. All rights reserved.</p>
       </footer>
     </div>

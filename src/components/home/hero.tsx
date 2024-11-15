@@ -44,7 +44,7 @@ export default function Hero({ tokenData }: HeroProps) {
               y: 0,
             }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="w-48 h-48 rounded-full bg-purple-500/20 p-2 mb-8"
+            className="w-48 h-48 rounded-full bg-orange-500/20 p-2 mb-8"
           >
             <Image
               width={192}
@@ -55,7 +55,7 @@ export default function Hero({ tokenData }: HeroProps) {
             />
           </motion.div>
           <motion.h1
-            className="text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text"
+            className="text-7xl font-bold mb-6 bg-gradient-to-r from-orange-400 to-yellow-400 text-transparent bg-clip-text"
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
@@ -63,7 +63,7 @@ export default function Hero({ tokenData }: HeroProps) {
             {tokenData.tokenName}
           </motion.h1>
           <motion.p
-            className="text-2xl mb-8 text-purple-200 max-w-2xl text-center"
+            className="text-2xl mb-8 text-orange-200 max-w-2xl text-center"
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.5 }}
@@ -78,7 +78,7 @@ export default function Hero({ tokenData }: HeroProps) {
           >
             <Button
               size="lg"
-              className="bg-purple-500 hover:bg-purple-600 transform hover:scale-105 transition-all"
+              className="bg-orange-500 hover:bg-orange-600 transform hover:scale-105 transition-all"
               asChild
             >
               <Link href={tokenData.dexLink ?? "#"} target="_blank">
@@ -88,13 +88,13 @@ export default function Hero({ tokenData }: HeroProps) {
             <Button
               size="lg"
               variant="outline"
-              className="border-purple-500 text-purple-500 hover:bg-purple-900 transform hover:scale-105 transition-all"
+              className="border-orange-500 text-orange-500 hover:bg-orange-600 transform hover:scale-105 transition-all"
             >
               <Link href={"#socials"}>Join Community</Link>
             </Button>
           </motion.div>
 
-          <Alert className="bg-purple-900/50 border-purple-500 max-w-2xl glow-on-hover">
+          <Alert className="bg-orange-600/50 border-orange-500 max-w-2xl glow-on-hover">
             <AlertDescription className="flex items-center justify-between">
               <CopyCA tokenCA={tokenData.tokenCA} />
             </AlertDescription>
