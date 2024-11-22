@@ -74,3 +74,11 @@ body {
 .glow-on-hover:hover {
   box-shadow: 0 0 10px 5px rgba(242, 169, 10, 0.5); /* Adjust the color and intensity as needed */
 }
+
+.button-color {
+  background-color: #ff5e00;
+}
+
+.header-color {
+  background-color: #ff5e00;
+}

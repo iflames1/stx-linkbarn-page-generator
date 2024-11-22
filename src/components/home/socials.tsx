@@ -15,9 +15,9 @@ export default function Socials({ socials }: { socials: SOCIAL }) {
     website: Globe,
   };
   return (
-    <section id="socials" className="py-16 bg-black/50 backdrop-blur-sm">
+    <section id="socials" className="py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-orange-400 to-pink-400 text-transparent bg-clip-text">
+        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#FF5E00] to-[#FF4500] text-transparent bg-clip-text">
           Join Our Community
         </h2>
         {socials && (
@@ -28,7 +28,7 @@ export default function Socials({ socials }: { socials: SOCIAL }) {
                 <Button
                   key={index}
                   variant="ghost"
-                  className="hover:bg-orange-900 transform hover:scale-105 transition-all"
+                  className="hover:bg-[#FF5E00] hover:text-white transform hover:scale-105 transition-all"
                   asChild
                 >
                   <Link href={url as unknown as string}>

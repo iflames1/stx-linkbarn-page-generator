@@ -28,7 +28,7 @@ export default async function LandingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-900 via-yellow-500 to-orange-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#F3A80A] via-[#FEFE68] to-[#B27F1F] text-white">
       <Hero tokenData={data} />
 
       {/*<Stats />*/}
